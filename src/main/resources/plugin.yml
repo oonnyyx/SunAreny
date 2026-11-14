@@ -1,0 +1,75 @@
+name: SunAreny
+version: '${project.version}'
+main: pl.onyxdev.areny.SunAreny
+api-version: '26.2'
+author: oonnyyx
+depend: [SunCore]
+description: Minigry na zapisy (Spleef, TNT Run, Król Wyspy) w osobnym świecie aren
+commands:
+  arena:
+    description: Areny SunCrafta — zapisy, statystyki, menu
+    usage: "/arena [dolacz|opusc|statystyki]"
+    aliases: [areny, minigry]
+permissions:
+  sunareny.*:
+    description: Wszystkie uprawnienia SunAren
+    default: op
+    children:
+      sunareny.gracz: true
+      sunareny.admin: true
+  sunareny.gracz:
+    description: Wszystko, czego potrzebuje zwykły gracz
+    default: true
+    children:
+      sunareny.menu: true
+      sunareny.dolacz: true
+      sunareny.opusc: true
+      sunareny.statystyki: true
+      sunareny.otworz: true
+  sunareny.menu:
+    description: Otwieranie menu /arena
+    default: true
+  sunareny.dolacz:
+    description: Dołączanie do zapisów
+    default: true
+  sunareny.opusc:
+    description: Wychodzenie z areny
+    default: true
+  sunareny.statystyki:
+    description: Podgląd statystyk swoich i innych graczy
+    default: true
+  sunareny.otworz:
+    description: Otwieranie zapisów z menu, gdy nic nie trwa (z cooldownem)
+    default: true
+  sunareny.admin:
+    description: Komendy administracyjne
+    default: op
+    children:
+      sunareny.admin.start: true
+      sunareny.admin.stop: true
+      sunareny.admin.wymus: true
+      sunareny.admin.odbuduj: true
+      sunareny.admin.tp: true
+      sunareny.admin.reload: true
+      sunareny.komendy: true
+  sunareny.admin.start:
+    description: /arena start <tryb>
+    default: op
+  sunareny.admin.stop:
+    description: /arena stop
+    default: op
+  sunareny.admin.wymus:
+    description: /arena wymus — start bez czekania na koniec zapisów
+    default: op
+  sunareny.admin.odbuduj:
+    description: /arena odbuduj — postawienie aren od nowa
+    default: op
+  sunareny.admin.tp:
+    description: /arena tp <tryb>
+    default: op
+  sunareny.admin.reload:
+    description: /arena reload
+    default: op
+  sunareny.komendy:
+    description: Używanie dowolnych komend w trakcie gry na arenie
+    default: op

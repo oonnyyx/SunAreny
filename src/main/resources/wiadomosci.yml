@@ -1,0 +1,96 @@
+# Wszystkie teksty SunAren (MiniMessage). Znaczniki w <nawiasach> podstawia plugin.
+prefiks: "<gradient:#ffc02e:#ff7a1a><b>Areny</b></gradient> <dark_gray>»</dark_gray> "
+
+tryby:
+  spleef:
+    nazwa: "Spleef nad Otchłanią"
+    kolor: "#9be7ff"
+    opis: "Rozkop śnieg pod rywalami. Kto spadnie, odpada."
+  tntrun:
+    nazwa: "TNT Run"
+    kolor: "#ff7a1a"
+    opis: "Bloki znikają ci spod nóg. Nie stój w miejscu!"
+  krol:
+    nazwa: "Król Wyspy"
+    kolor: "#ffc02e"
+    opis: "Utrzymaj się na szczycie. Zrzucaj innych kijem."
+
+ogloszenie:
+  zapisy: "<gray>⚔ Za <white><sekundy> s</white> startuje <color:<kolor>><b><tryb></b></color>! <click:run_command:'/arena dolacz'><hover:show_text:'<gray>Kliknij, żeby się zapisać'><#7ee081>[KLIKNIJ, ABY DOŁĄCZYĆ]</#7ee081></hover></click> <dark_gray>(<liczba>/<max>)"
+  przypomnienie: "<gray>⚔ <color:<kolor>><tryb></color> za <white><sekundy> s</white> · <liczba>/<max> graczy <click:run_command:'/arena dolacz'><hover:show_text:'<gray>Kliknij, żeby się zapisać'><#7ee081>[DOŁĄCZ]</#7ee081></hover></click>"
+  przepadla: "<gray>⚔ <tryb> nie wystartował — za mało chętnych (<liczba>/<min>)."
+  wygrana: "<gold>🏆 <white><b><gracz></b></white> wygrywa <color:<kolor>><tryb></color>!"
+  remis: "<gray>⚔ <tryb> zakończony bez zwycięzcy (koniec czasu)."
+
+gra:
+  dolaczyl: "<#7ee081>+</#7ee081> <white><gracz></white> <gray>dołącza (<liczba>/<max>)"
+  wyszedl: "<#ff4d6d>-</#ff4d6d> <white><gracz></white> <gray>wychodzi (<liczba>/<max>)"
+  odpadl: "<#ff4d6d>☠</#ff4d6d> <white><gracz></white> <gray>odpada · zostało <white><zywi></white>"
+  start: "<gold><b>START!</b></gold> <gray><opis>"
+  kurczenie: "<#9be7ff>❄ Krawędź zaczyna pękać!"
+  upadek-krol: "<#ff4d6d>⬇ <white><gracz></white> <gray>spada z wyspy (-<kara> pkt)"
+  lider-krol: "<gold>👑 <white><gracz></white> <gray>przejmuje szczyt!"
+  podsumowanie-naglowek: "<gold><b>━━━ Wyniki: <tryb> ━━━"
+  podsumowanie-miejsce: "<gray>#<miejsce> <white><gracz></white><wynik>"
+  nagroda: "<gray>Nagroda: <#7ee081>+<xp> XP</#7ee081><dodatki>"
+  bez-nagrody: "<dark_gray>Dzisiejszy limit nagród wykorzystany (<limit> gier). Graj dalej dla chwały!"
+
+tytul:
+  odliczanie: "<gold><b><sekundy>"
+  odliczanie-pod: "<gray><tryb>"
+  start: "<#7ee081><b>START!"
+  start-pod: "<gray><opis>"
+  odpadles: "<#ff4d6d><b>Odpadłeś!"
+  odpadles-pod: "<gray>Miejsce <white>#<miejsce></white> · oglądasz do końca"
+  wygrales: "<gold><b>ZWYCIĘSTWO!"
+  wygrales-pod: "<gray><tryb>"
+  koniec: "<gold><b><gracz>"
+  koniec-pod: "<gray>wygrywa <tryb>"
+  koniec-remis: "<gray><b>KONIEC CZASU"
+
+pasek:
+  zapisy: "<color:<kolor>><b><tryb></b></color> <gray>· zapisy <white><sekundy> s</white> · <liczba>/<max>"
+  gra: "<color:<kolor>><b><tryb></b></color> <gray>· żywi: <white><zywi></white> · <white><czas></white>"
+  krol: "<color:<kolor>><b><tryb></b></color> <gray>· twoje punkty: <white><punkty>/<cel></white> · lider: <white><lider></white> · <white><czas></white>"
+  ogladasz: "<gray>Oglądasz · <white>/arena opusc</white> żeby wrócić"
+  na-szczycie: "<gold>👑 Na szczycie! +1"
+
+info:
+  dolaczyles: "<gray>Zapisano na <color:<kolor>><tryb></color>. Twój ekwipunek jest bezpiecznie schowany — wróci po grze."
+  brak-zapisow: "<gray>Teraz nie ma zapisów. Otwórz menu: <white>/arena</white>"
+  juz-grasz: "<gray>Już jesteś na arenie."
+  trwa-gra: "<gray>Trwa gra <white><tryb></white> — poczekaj na następną."
+  pelne: "<gray>Zapisy są pełne."
+  nie-tutaj: "<gray>Najpierw wyjdź z walki / pojazdu i stań na ziemi."
+  wyszedles: "<gray>Wróciłeś z areny. Ekwipunek przywrócony."
+  nie-grasz: "<gray>Nie jesteś na arenie."
+  przerwa: "<gray>Następną grę można otworzyć za <white><sekundy> s</white>."
+  tryb-wylaczony: "<gray>Ten tryb jest wyłączony."
+  komenda-zablokowana: "<gray>Tej komendy nie użyjesz na arenie. Wyjście: <white>/arena opusc</white>"
+  schowek-blad: "<#ff4d6d>Twój poprzedni schowek z areny jest uszkodzony.</#ff4d6d> <gray>Nic nie straciłeś — zgłoś to adminowi, zanim zagrasz znowu."
+  przywrocono: "<gray>Gra na arenie została przerwana — przywrócono twój ekwipunek i pozycję."
+  statystyki-naglowek: "<gold><b>Areny · <gracz>"
+  statystyki-linia: "<gray>Wygrane: <white><wygrane></white> · Rozegrane: <white><rozegrane></white> · Seria: <white><seria></white> (rekord <white><rekord></white>)"
+  statystyki-tryb: "<gray>  <color:<kolor>><tryb></color>: <white><wygrane></white> wygranych z <white><rozegrane></white>"
+  brak-gracza: "<gray>Nie znam takiego gracza."
+
+admin:
+  start: "<gray>Otwarto zapisy na <white><tryb></white>."
+  stop: "<gray>Gra przerwana, wszyscy wrócili na miejsce."
+  nic-nie-trwa: "<gray>Żadna gra teraz nie trwa."
+  wymus: "<gray>Zapisy skrócone — start za chwilę."
+  odbudowano: "<gray>Areny postawione od nowa (<bloki> bloków)."
+  przeladowano: "<gray>Przeładowano config.yml i wiadomosci.yml."
+  zly-tryb: "<gray>Nie ma takiego trybu. Dostępne: <white><tryby></white>"
+  pomoc: "<gray>/arena start <tryb> · stop · wymus · odbuduj · tp <tryb> · reload"
+
+menu:
+  tytul: "<gradient:#ffc02e:#ff7a1a><b>Areny SunCrafta</b></gradient>"
+  tryb-zapisy: "<#7ee081>▶ Zapisy trwają! Kliknij, żeby dołączyć (<liczba>/<max>)"
+  tryb-gra: "<gray>⏳ Trwa gra · poczekaj na koniec"
+  tryb-otworz: "<#7ee081>▶ Kliknij, żeby otworzyć zapisy"
+  tryb-przerwa: "<gray>⏳ Następną grę otworzysz za <sekundy> s"
+  tryb-zajete: "<gray>⏳ Trwa inna gra"
+  twoje: "<gray>Twoje: <white><wygrane></white> wygranych / <white><rozegrane></white> gier"
+  statystyki: "<gold><b>Twoje statystyki"
+  wyjdz: "<#ff4d6d><b>Wyjdź z areny"

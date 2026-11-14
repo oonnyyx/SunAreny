@@ -1,0 +1,93 @@
+# ============================================================
+#  SunAreny — minigry na zapisy w osobnym świecie
+# ============================================================
+
+# Świat aren tworzony automatycznie (pusty, bez terenu). Wpisz go też do
+# SunZycia → swiaty-bez-utraty-zyc, choć na arenie i tak nie da się zginąć.
+swiat: areny
+# Biom świata aren (kolor nieba i trawy). plains = niebieskie niebo.
+biom: plains
+# Stała pora dnia w świecie aren (ticki, 6000 = południe, 12500 = zachód słońca).
+pora-dnia: 6000
+
+# ---------- zapisy ----------
+zapisy:
+  sekundy: 60            # ile trwają zapisy
+  min-graczy: 2          # mniej → gra przepada
+  max-graczy: 12
+  # gdy zapisy się zapełnią, czekamy już tylko tyle
+  pelne-sekundy: 10
+  odliczanie-sekundy: 5
+  # przypomnienia na czacie (sekundy przed końcem zapisów)
+  przypomnienia: [30, 10]
+
+# ---------- automat ----------
+automat:
+  # co ile minut serwer sam otwiera zapisy na losowy tryb (0 = wyłączone)
+  co-minut: 20
+  # automat rusza tylko, gdy online jest co najmniej tyle osób
+  min-online: 3
+
+# Gracz może otworzyć zapisy z menu, gdy nic nie trwa.
+gracze-otwieraja:
+  wlaczone: true
+  # przerwa (s) między grami otwieranymi przez graczy, liczona od końca poprzedniej gry
+  przerwa-sekundy: 120
+
+# Komendy dozwolone dla gracza w trakcie gry (bez ukośnika, małymi literami).
+dozwolone-komendy: [arena, areny, minigry, msg, r, w, tell, powiadomienia]
+
+# ---------- nagrody ----------
+# Komendy z konsoli. {gracz} = nick. Puste listy = brak nagrody.
+nagrody:
+  # ile gier dziennie (na gracza) daje nagrody; potem gra się dalej, ale bez łupów
+  gier-dziennie: 6
+  miejsce-1:
+    xp: 50
+    komendy: ["skrzynki give {gracz} wojenna 1"]
+  miejsce-2:
+    xp: 25
+    komendy: []
+  miejsce-3:
+    xp: 15
+    komendy: []
+  udzial:
+    xp: 5
+    komendy: []
+
+# ---------- tryby ----------
+# wlaczony: czy tryb jest w menu i w automacie
+# x, y, z: środek areny w świecie aren (areny stoją daleko od siebie)
+tryby:
+  spleef:
+    wlaczony: true
+    x: 0
+    y: 100
+    z: 0
+    max-sekund: 300
+    # co ile sekund zapada się zewnętrzny pierścień najwyższego piętra
+    kurczenie-co: 25
+    # szansa (0-1) na śnieżkę po rozkopaniu bloku; śnieżka niszczy śnieg, w który trafi
+    sniezki-szansa: 0.35
+  tntrun:
+    wlaczony: true
+    x: 400
+    y: 100
+    z: 0
+    max-sekund: 300
+    # po ilu tickach znika blok, na który ktoś wszedł
+    opoznienie-tickow: 7
+    # ile sekund po starcie bloki jeszcze nie znikają
+    ochrona-sekund: 3
+  krol:
+    wlaczony: true
+    x: 800
+    y: 100
+    z: 0
+    max-sekund: 240
+    # ile punktów do wygranej (1 punkt = 1 sekunda na szczycie)
+    do-wygranej: 60
+    # ile punktów traci gracz, który spadnie
+    kara-za-upadek: 5
+    # siła odrzutu przy uderzeniu
+    odrzut: 1.15
