@@ -4,6 +4,10 @@
 
 Sign-up minigames for Paper 26.2: Spleef, TNT Run and King of the Hill. The plugin creates its own empty world, builds the arenas and rebuilds them after every round.
 
+<p align="center">
+  <img src="docs/menu.jpg" width="600" alt="Arena menu">
+</p>
+
 ## Modes
 
 - **Spleef**: multi-level snow arena; the outer ring of the top level collapses over time, and broken snow can drop snowballs that destroy the block they hit

@@ -4,6 +4,10 @@
 
 Minigry na zapisy na Paper 26.2: Spleef, TNT Run i Król Wyspy. Plugin sam tworzy pusty świat, stawia areny i odbudowuje je po każdej rundzie.
 
+<p align="center">
+  <img src="docs/menu.jpg" width="600" alt="Menu aren">
+</p>
+
 ## Tryby
 
 - **Spleef**: wielopiętrowa śnieżna arena. Zewnętrzny pierścień najwyższego piętra z czasem się zapada, a z rozkopanego śniegu może wypaść śnieżka, która niszczy blok, w który trafi.
